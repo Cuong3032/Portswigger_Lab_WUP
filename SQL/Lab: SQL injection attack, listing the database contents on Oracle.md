@@ -1,4 +1,4 @@
-Tương tự bài lab trước mục tiêu bài này cũng là đăng nhập thành công vào hệ thống dưới quyền tài khoản administrator nhưng là trên Oracle database.
+Mục tiêu bài này là đăng nhập thành công vào hệ thống dưới quyền tài khoản administrator nhưng là trên Oracle database.
 
 Đầu tiên là kiểm tra số cột
 
