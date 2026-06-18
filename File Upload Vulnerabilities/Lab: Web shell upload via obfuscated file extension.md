@@ -29,18 +29,9 @@ Thì ở đây sau khi upload 1 file text thì nó báo về lỗi và chỉ cho
 
 <img width="2068" height="1201" alt="image" src="https://github.com/user-attachments/assets/8cf64a73-a050-40e5-9688-e6dd1e8e35bf" />
 
-Thì ở đây đã không thành công. Tiếp theo thì nếu ta chèn vào trong nội dung của file image 1 đoạn code php thì liệu code php bên trong có được thực thi? Được biết rằng trình thông dịch php
-sẽ thực thi code php khi nó phát hiện ra tag `<?php & ?>`.
+Thì ở đây đã không thành công. 
 
-<img width="2563" height="1381" alt="image" src="https://github.com/user-attachments/assets/0e2034aa-9aae-4107-b223-ec1247f836d4" />
-
-có thể thấy ở đây ta đã thành công upload 1 file jpg nhưng có chứa code php. Nhưng quan trọng ở đây là liệu code php của ta có được thực thi hay không?
-
-<img width="2547" height="1443" alt="image" src="https://github.com/user-attachments/assets/232c87b0-7aee-43c1-8955-aceb5f358d35" />
-
-kết quả rất đáng tiếc là không.
-
-Ở đây ta nhớ lại fake extension khi mà ta vẫn chưa test trường hợp nếu giả sử ta chèn 1 null byte vào thì sao như này `python.php%00.jpg` thì khi hệ thống xử lí file xuống ổ cứng hàm hệ thống
+a vẫn chưa test trường hợp nếu giả sử ta chèn 1 null byte vào thì sao như này `python.php%00.jpg` thì khi hệ thống xử lí file xuống ổ cứng hàm hệ thống
 quét tới null byte là sẽ end luôn và không đọc tới đuôi jpg dẫn tới httpd sẽ coi đây như là 1 file php.
 
 <img width="2563" height="1443" alt="image" src="https://github.com/user-attachments/assets/74a8297c-b6de-4613-937d-da00547f094f" />
