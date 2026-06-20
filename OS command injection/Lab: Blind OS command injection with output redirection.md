@@ -1,6 +1,7 @@
 <img width="1542" height="764" alt="image" src="https://github.com/user-attachments/assets/c3e9132d-d557-4948-9165-53c514b29b88" />
 
 Yêu cầu Lab: thực thi `whoami` và lấy được output
+
 Gợi ý: có thể thực thi shell command trong phần nhập liệu của user, output không được in ra, có thể redirect output vào folder `/var/www/images/`(folder này có thể ghi vào)
 
 <img width="2563" height="1443" alt="image" src="https://github.com/user-attachments/assets/aa67c10c-eec0-4f33-9ab6-8eb79d8f0cdb" />
