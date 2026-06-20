@@ -38,3 +38,23 @@ Vậy nên tôi nghĩ ở đây khả năng không có dính lỗi OS command.
 
 Quay lại với phần `submit feedback`.
 
+Với phần này thì tôi phát hiện ra rằng khi tôi chèn payload vào các trường như `name, subject, message` thì đều không có phản ứng gì nhưng chỉ có khi tôi chèn
+vào `email` 1 đoạn pyaload thì nó có trả về thông báo do đó tôi nghĩ khi code command chạy shell commmand thì dev đã không cho 3 trường kia vào hoặc là được bọc trong dấu nháy như này "$name"
+
+<img width="2563" height="1313" alt="image" src="https://github.com/user-attachments/assets/17992995-491c-4d1f-b582-45bfa512d513" />
+
+<img width="2043" height="861" alt="image" src="https://github.com/user-attachments/assets/9ab5f567-a8ea-4acb-aabc-68959211ff67" />
+
+ở đây sever không bị delay và báo lỗi `could not save` thì tôi nghĩ là do phía sau command vẫn còn một cái gì đó và khi mà ta ngắt chuỗi ở phía trên thì câu lệnh sleep nó sẽ thành 
+
+    slepp 10 + ....
+
+Và chính đoạn `...` kia đã gây ra lỗi dẫn đến câu lệnh `sleep` không được thực thi do đó ta có thể dùng `||` để nó bỏ qua phần `...` và chỉ thực thi mỗi `sleep`.
+
+<img width="2143" height="1311" alt="image" src="https://github.com/user-attachments/assets/620549d5-657b-4d78-959d-53da7e968a30" />
+
+Có thể thấy respone trả về đã bị delay.
+
+<img width="2563" height="1443" alt="image" src="https://github.com/user-attachments/assets/8bb016e7-93a4-4be9-9e81-8dcf613a14dd" />
+
+Và thế là ta đã thành công solve lab này.
