@@ -1,6 +1,7 @@
 <img width="1547" height="1120" alt="image" src="https://github.com/user-attachments/assets/b3e10b76-7d37-4b93-8b5e-38b531e8b7dd" />
 
 Yêu cầu: thực hiện truy vấn DNS lookup tới Burp Collaborator.
+
 Gợi ý: có thể thực thi shell command dựa vào đầu vào của user, và không có tác dụng gì tới respone, không thể chuyển hướng tới vị trí có thể truy cập nhưng có thể redirect ra một miền ngoài.
 
 <img width="2563" height="1443" alt="image" src="https://github.com/user-attachments/assets/519b2225-c9f9-42dc-bf5d-fd46888110a7" />
