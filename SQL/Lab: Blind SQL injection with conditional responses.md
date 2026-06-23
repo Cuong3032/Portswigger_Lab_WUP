@@ -15,7 +15,7 @@ Hint: Password có thể chứa số và các chữ cái alphabet.
 
 Với tính năng my account thì sau khi nhấp vào sẽ bắt ta phải đăng nhập và ta thấy nó xuất hiện dòng chữ `Welcome Back` thì dựa vào gợi ý ở đây có thể thấy đã query đã trả về ít nhất 1 rows.
 
-Và được biết rằng SQL query có thể thực thi ở trên `Tracking Cookie` vậy ta thử chèn thêm 1 payload vào `Tracking Cookie` xem nào. Ở đây ta sẽ dùng payload như này:
+Và được biết rằng SQL query có thể thực thi ở trên `Tracking Cookie` và sẽ chỉ hiển thị `Welcome Back` khi mà có ít nhất 1 row được trả về, vậy ta thử chèn thêm 1 payload vào `Tracking Cookie` xem nào. Ở đây ta sẽ dùng payload như này để cả 2 vế đều true và trả về ít nhất 1 row:
 
     [cookie]' and '1' = '1
 
