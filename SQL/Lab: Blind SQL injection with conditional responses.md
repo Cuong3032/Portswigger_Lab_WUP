@@ -1,6 +1,6 @@
 <img width="1498" height="750" alt="image" src="https://github.com/user-attachments/assets/7ce447f6-a0db-4ebb-b493-e80ca6c28728" />
 
-Yêu cầu: log in bằng `administrator` account từ bảng users
+Yêu cầu: login bằng `administrator` account từ bảng users
 
 Gợi ý: Bài lab này có lỗ hổng SQLi ở phần tracking cookie. Kết quả của lệnh SQL sẽ không được trả về và không có bất kỳ lỗi nào được trả về. Nhưng sẽ có đoạn message `Welcome Back` được trả về nếu như
 query trả về bất kỳ rows nào.
