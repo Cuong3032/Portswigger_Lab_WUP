@@ -13,7 +13,7 @@ Hint: Password có thể chứa số và các chữ cái alphabet.
 
 <img width="2563" height="1443" alt="image" src="https://github.com/user-attachments/assets/dfeb591f-9131-485d-88fc-3bf597c8c6df" />
 
-Với tính năng my account thì sau khi nhâp vào sẽ bắt ta phải đăng nhập và ta thấy nó xuất hiện dòng chữ `Welcome Back` thì dựa vào gợi ý ở đây có thể thấy đã query đã trả về ít nhất 1 rows.
+Với tính năng my account thì sau khi nhấp vào sẽ bắt ta phải đăng nhập và ta thấy nó xuất hiện dòng chữ `Welcome Back` thì dựa vào gợi ý ở đây có thể thấy đã query đã trả về ít nhất 1 rows.
 
 Và được biết rằng SQL query có thể thực thi ở trên `Tracking Cookie` vậy ta thử chèn thêm 1 payload vào `Tracking Cookie` xem nào. Ở đây ta sẽ dùng payload như này:
 
