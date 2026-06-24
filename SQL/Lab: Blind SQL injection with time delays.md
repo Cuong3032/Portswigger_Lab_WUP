@@ -8,7 +8,7 @@ Vậy nếu biết là tracking cookie có thể thực thi được query rồi
 
 Thì sau khi thử từng query của từng loại database thì ta thấy query này của PostgreSQL đã thành công khiến sever delay 10s:
 
-    '||SELECT pg_sleep(10)||'
+    '||(SELECT pg_sleep(10))||'
 
 <img width="2061" height="1349" alt="image" src="https://github.com/user-attachments/assets/267ada53-d97b-4d09-8469-35a7f2f10801" />
 
