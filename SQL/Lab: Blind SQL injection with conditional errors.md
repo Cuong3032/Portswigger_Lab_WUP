@@ -1,4 +1,4 @@
-<img width="2561" height="1443" alt="image" src="https://github.com/user-attachments/assets/9243b658-e729-489e-93a3-3069e81b2b32" /><img width="2560" height="1443" alt="image" src="https://github.com/user-attachments/assets/d6154d90-863e-4e02-8609-6ccd79dd8dec" /><img width="1478" height="782" alt="image" src="https://github.com/user-attachments/assets/f82da865-90b5-42db-8420-9f57160fd71c" />
+<img width="1478" height="782" alt="image" src="https://github.com/user-attachments/assets/f82da865-90b5-42db-8420-9f57160fd71c" />
 
 Yêu cầu: login bằng administrator account từ bảng users
 
