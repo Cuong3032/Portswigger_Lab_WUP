@@ -127,3 +127,11 @@ Ta thử với payload đầu tiên trước
 <img width="2493" height="1443" alt="image" src="https://github.com/user-attachments/assets/8e50b0cf-3ca2-4332-8514-bec59b003cf3" />
 
 Có thể thấy nó đã thành công unserialzie rồi nhưng do không nhận diện được user nên đã bị lỗi nhưng ta đã thành công xóa file cần xóa vì hàm `__destruct` đã được gọi.
+
+Tiếp với payload 2:
+
+<img width="2143" height="300" alt="image" src="https://github.com/user-attachments/assets/725d1482-4074-48d0-8dbd-8625292f2b79" />
+
+<img width="2501" height="1443" alt="image" src="https://github.com/user-attachments/assets/e0853709-8a59-4c8e-af60-06b7d4f90153" />
+
+Cũng giống như payload 1 nó đã thành công unserialzie rồi nhưng do không nhận diện được user nên đã bị lỗi nhưng ta đã thành công xóa file cần xóa vì hàm `__destruct` đã được gọi.
