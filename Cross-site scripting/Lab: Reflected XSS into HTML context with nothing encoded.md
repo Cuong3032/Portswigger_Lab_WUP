@@ -18,8 +18,8 @@ Thì ở đây phần tag đã không in ra có nghĩa là phần tag đó đã 
 
 Vậy đã rõ ở đây ta có thể thực hiện HTML injection thì ta sẽ chèn vào đây 1 script javascrip alert 1 thông báo xem sao.
 
-<img width="2493" height="1443" alt="image" src="https://github.com/user-attachments/assets/11e1ab36-559e-4fce-b746-e424d9a4f973" />
+<img width="2493" height="1443" alt="image" src="https://github.com/user-attachments/assets/91032ad5-e704-459f-a579-59e68ae3eaa1" />
 
 Ở đây tôi đã thử alert origin của trang web và nó đã trả về thông báo như trên.
 
-<img width="2494" height="1443" alt="image" src="https://github.com/user-attachments/assets/12fb8372-9544-4a63-9c4f-432888a8a3b3" />
+<img width="2504" height="1443" alt="image" src="https://github.com/user-attachments/assets/cbce53df-3621-4e2c-8f1f-701a35a94a1d" />
