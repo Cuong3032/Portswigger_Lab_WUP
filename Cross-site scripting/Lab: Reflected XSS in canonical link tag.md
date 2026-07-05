@@ -53,7 +53,4 @@ Tiếp theo là `alert`.
 
 <img width="2506" height="1443" alt="image" src="https://github.com/user-attachments/assets/9aaaac3a-796c-43c7-ab4d-63d4eed2cba9" />
 
-Thì ở đây đã kích hoạt được thông báo nhưng nhớ lại lưu ý thì bài lab này chỉ có thể thành công trên `Google` thì tôi sẽ thực hiện lại nó bằng `Google`
-
-<img width="2563" height="1443" alt="image" src="https://github.com/user-attachments/assets/3dc72d43-8677-4bb1-9d67-f4b8a600994a" />
-
+<img width="2497" height="1443" alt="image" src="https://github.com/user-attachments/assets/a422c541-bfbf-4a90-b82a-8eb38cba61e3" />
