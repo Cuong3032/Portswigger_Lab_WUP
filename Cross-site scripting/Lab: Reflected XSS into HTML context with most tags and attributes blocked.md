@@ -30,7 +30,7 @@ Thì nó báo lại với tôi là: "Attribute is not allowed"
 
 Có thể thấy ở đây `WAF` cũng đã chặn cả các attribute nguy hiểm thường thấy.
 
-Tôi sẽ thử brute force bằng cách thử từng loại event handler xem loại nào không bị chặn bằng tab `Intruder` của `Burpsuite`.
+Tôi sẽ thử Fuzzing bằng cách thử từng loại event handler xem loại nào không bị chặn bằng tab `Intruder` của `Burpsuite`.
 
 <img width="2563" height="1443" alt="image" src="https://github.com/user-attachments/assets/77571c28-0dd4-4651-bd5d-7a424c7a05e8" />
 
