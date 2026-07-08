@@ -34,8 +34,7 @@ Lúc này nó khi qua backend xử lí nó sẽ không thấy bất kỳ ký t�
 <a id="author" href="https:a.com/&apos;-alert(1)-&apos;" onclick="var tracker={track(){}};tracker.track('https:a.com/&apos;-alert(1)-&apos;');">a</a>
 ```
 
-Ngay khi trình duyệt tải trang và phân tích cú pháp HTML, nó đã tự động decode các HTML entities trong thuộc tính này và lưu vào cây DOM. Do đó, khi người dùng kích hoạt thuộc tính `onclick` (bằng 
-cách click chuột), trình duyệt sẽ lấy chuỗi đã được giải mã sẵn trong DOM đẩy cho JS engine thực thi:
+Ngay khi trình duyệt tải trang và phân tích cú pháp HTML, nó đã tự động decode các HTML entities trong thuộc tính này và lưu vào cây DOM. Tuy nhiên, cần lưu ý: mặc dù HTML entity đã được decode thành ký tự gốc (như dấu nháy đơn), nó chỉ có thể đóng/mở chuỗi đối với các thuộc tính sự kiện (event handlers). Còn với các thuộc tính HTML thông thường, trình duyệt chỉ coi đó là một ký tự dữ liệu đơn thuần, hoàn toàn không có khả năng phá vỡ cấu trúc thẻ. Do đó, khi người dùng kích hoạt thuộc tính `onclick` (bằng cách click chuột), trình duyệt sẽ lấy chuỗi đã được giải mã sẵn trong DOM đẩy cho JS engine thực thi:
 
 ```js
 var tracker={track(){}};tracker.track('https:a.com/'-alert(1)-'');
